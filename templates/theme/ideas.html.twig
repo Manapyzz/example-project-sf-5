@@ -1,0 +1,7 @@
+<h1>Liste des idées pour {{ theme.name }}</h1>
+
+<ul>
+    {% for idea in theme.ideas %}
+        <li>{{ idea.name }}</li>
+    {% endfor %}
+</ul>

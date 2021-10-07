@@ -1,0 +1,9 @@
+<h1>Liste des thèmes</h1>
+
+<ul>
+    {% for theme in themes %}
+        <li>
+                {{ theme.name }} <a href="{{ path('idea_list', {id: theme.id}) }}">Voir</a>
+        </li>
+    {% endfor %}
+</ul>

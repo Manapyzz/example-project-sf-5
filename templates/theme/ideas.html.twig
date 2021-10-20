@@ -5,3 +5,5 @@
         <li>{{ idea.name }}</li>
     {% endfor %}
 </ul>
+
+<a href="{{ path('create_idea', { themeId: theme.id }) }}">Ajouter une idée pour le thème {{ theme.name }}</a>
